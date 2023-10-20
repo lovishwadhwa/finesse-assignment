@@ -1,24 +1,21 @@
-import logo from "./logo.svg";
+import { ConfigProvider } from "antd";
 import "./App.css";
+import AppLayout from "./containers/AppLayout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider
+      theme={{
+        token: {
+          fontFamily: "Carbon",
+          colorPrimary: "black",
+        },
+      }}
+    >
+      <div className="App">
+        <AppLayout />
+      </div>
+    </ConfigProvider>
   );
 }
 
