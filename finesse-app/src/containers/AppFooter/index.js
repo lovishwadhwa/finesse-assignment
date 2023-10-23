@@ -5,6 +5,7 @@ import {
   FacebookOutlined,
   InstagramOutlined,
   YoutubeOutlined,
+  UpOutlined,
 } from "@ant-design/icons";
 
 const ALL_LINKS = [
@@ -24,6 +25,21 @@ const AppFooter = () => {
         position: "relative",
       }}
     >
+      <div
+        style={{
+          padding: 48,
+          background: "white",
+          borderTop: "1px solid lightgrey",
+        }}
+        onClick={() =>
+          window.scroll({
+            behavior: "smooth",
+            top: 0,
+          })
+        }
+      >
+        Back to the top <UpOutlined />
+      </div>
       <div
         style={{
           padding: "44px 8px",

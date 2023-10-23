@@ -1,9 +1,16 @@
 import React from "react";
+import ImagesSlider from "../../components/ImagesSlider";
+import ProductDetails from "../ProductDetails";
+import Recommendations from "../Recommendations";
+import Disclaimer from "../Disclaimer";
 
 const Product = () => {
   return (
-    <div>
-      <h1>Product page</h1>Product Page
+    <div style={{ position: "relative" }}>
+      <ImagesSlider />
+      <ProductDetails />
+      <Disclaimer />
+      <Recommendations />
     </div>
   );
 };

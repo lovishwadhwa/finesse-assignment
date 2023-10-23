@@ -6,20 +6,23 @@ import {
 } from "@ant-design/icons";
 import { Badge, Button } from "antd";
 import Logo from "../../assets/Logo.png";
+import useScrollDirection from "../../hooks/useScrollDirection";
 
 const ICON_SIZE = 24;
 
 const AppHeader = () => {
+  const scrollDirection = useScrollDirection();
   return (
     <Header
       style={{
-        position: "sticky",
-        top: 0,
-        zIndex: 1,
+        maxWidth: 460,
+        position: "fixed",
+        top: scrollDirection === "down" ? -64 : 0,
+        zIndex: 2,
         width: "100%",
         display: "flex",
         alignItems: "center",
-        padding: "0 8px",
+        padding: "0 24px",
         background: "white",
         justifyContent: "center",
       }}

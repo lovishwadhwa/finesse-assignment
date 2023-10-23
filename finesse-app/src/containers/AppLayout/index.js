@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Spin } from "antd";
+import { Layout } from "antd";
 import {
   createBrowserRouter,
   redirect,
@@ -30,19 +30,19 @@ const AppLayout = () => {
     <Layout
       style={{
         maxWidth: 460,
-        height: "100vh",
+        minHeight: "100vh",
         background: "white",
         margin: "auto",
         overflow: "auto",
+        position: "relative",
       }}
     >
       <AppHeader />
       <Content className="site-layout">
         <div
           style={{
-            padding: 24,
+            marginTop: 64,
             minHeight: 380,
-            textAlign: "center",
           }}
         >
           <RouterProvider router={router} />

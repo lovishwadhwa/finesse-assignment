@@ -1,0 +1,21 @@
+.swiper-slide {
+    background: white;
+}
+
+
+  /* scroll */
+.swiper-scrollbar {
+    height: 2px !important;
+    bottom: 32px !important;
+    background: white !important;
+    left: 10% !important;
+    width: 80% !important;
+    border-radius: 0px !important;
+}
+
+.swiper-scrollbar-drag {
+    background: white !important;
+    height: 6px !important;
+    border-radius: 0px !important;
+}
+  
