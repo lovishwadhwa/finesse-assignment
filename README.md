@@ -7,7 +7,7 @@
 
 ## Identify 3 performance issues of the current live website and describe, in writing, what they are and how you would address & fix them.
 
-### I have observed the product page and found some perfomannce issues which can be painful while scaling our product lines and overall the company size
+I have observed the product page and found some perfomannce issues which can be painful while scaling our product lines and overall the company size
 
 - We can separate out the type of data in separate API calls - this would help us gauge and size our services better (specially if we follow microservices.) - I have shown in the Node JS app how can we separate images, product meta data, variants etc.
 - I could see that the products are yet not working with identifiers in the url but with a name of the article - this could generate duplicate urls for different articles as we scale so we should move to the product ids/ some kind of SKU etc,
@@ -15,11 +15,11 @@
 
 ## If you could improve one thing about FINESSE right now - as you experience it - what would it be and why?
 
-### As FINESSE goal states it's a fast fashion brand for Gen-Z, I would like to give the consumer a power to design their own stuff or modify existing designs with something relatively new, share it with the community (like a social media layer on top of the ecommerce) and once some x number people votes up or ready to order, we publish it on our website with them as some kind of partners.
+As FINESSE goal states it's a fast fashion brand for Gen-Z, I would like to give the consumer a power to design their own stuff or modify existing designs with something relatively new, share it with the community (like a social media layer on top of the ecommerce) and once some x number people votes up or ready to order, we publish it on our website with them as some kind of partners.
 
 ## Your plane crashes and you land on an island. What do you do? How do you plan your survival?
 
-### I would do these things if I am not much affected physically :
+I would do these things if I am not much affected physically :
 
 - Find out how many people survive the crash with me,
 - Find out if I need a first aid and then provide it to others,
@@ -34,6 +34,6 @@
 
 ## What matters to you most and why?
 
-### Career-wise I would say the most important for me right now in my new job is to have challenges which would help me grind myself and learn as much as I can because I believe I am still quite young to learn a lot of stuff happening in the engineering world. I would want to handle stuff from scratch so that when it's my time to solve a bigger problem, I would be knowing the processes and thinking hats around it.
+Career-wise I would say the most important for me right now in my new job is to have challenges which would help me grind myself and learn as much as I can because I believe I am still quite young to learn a lot of stuff happening in the engineering world. I would want to handle stuff from scratch so that when it's my time to solve a bigger problem, I would be knowing the processes and thinking hats around it.
 
-### If it's a personal question, the most that matters is my family as they have been besides me throughout and they have enabled me to reach where I am today. I would eventually like to stay close to my family when they need me the most in future (probably not right now as they're capable of handling things indenpendently for now)
+If it's a personal question, the most that matters is my family as they have been besides me throughout and they have enabled me to reach where I am today. I would eventually like to stay close to my family when they need me the most in future (probably not right now as they're capable of handling things indenpendently for now)
