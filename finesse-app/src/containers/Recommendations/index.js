@@ -1,7 +1,13 @@
 import Typography from "antd/es/typography/Typography";
+import { useQuery } from "@tanstack/react-query";
 import ProductPreview from "../../components/ProductPreview";
+import { getRecommendations } from "../../apis/recommendation";
 
 export default function Recommendations() {
+  const { data: { products = [] } = {} } = useQuery({
+    queryKey: ["product-recommendation"],
+    queryFn: () => getRecommendations(),
+  });
   return (
     <div
       style={{
@@ -17,10 +23,9 @@ export default function Recommendations() {
           width: "100%",
         }}
       >
-        <ProductPreview />
-        <ProductPreview />
-        <ProductPreview />
-        <ProductPreview />
+        {products.map((product) => (
+          <ProductPreview key={product.handle} product={product} />
+        ))}
       </div>
     </div>
   );

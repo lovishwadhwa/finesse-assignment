@@ -31,7 +31,7 @@ const Disclaimer = () => {
     <div style={{ background: "#ededed", color: "#828282" }}>
       <Row>
         {boxes.map((box) => (
-          <Col span={12} style={{ padding: "24px 18px" }}>
+          <Col key={box.label} span={12} style={{ padding: "24px 18px" }}>
             <Flex align="center">
               <div style={{ fontSize: 24, marginRight: 8 }}>{box.icon}</div>
               {box.label}

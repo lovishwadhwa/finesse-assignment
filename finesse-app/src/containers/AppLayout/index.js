@@ -14,9 +14,8 @@ const { Content } = Layout;
 const router = createBrowserRouter([
   {
     path: "/",
-
     loader: () => {
-      return redirect("/products/39908913152077");
+      return redirect("/products/sandy-tie-dye-print-dress");
     },
   },
   {

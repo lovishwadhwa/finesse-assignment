@@ -35,9 +35,10 @@ const ImagesSlider = ({ images = [Demo, Demo, Demo] }) => {
         style={{ height: 550, width: "100%" }}
         draggable
         scrollbar={{ draggable: true }}
+        initialSlide={currentImage}
       >
         {images.map((image, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={`{image} - ${index}`}>
             <ImagePreview
               image={image}
               handleClick={() => openImageViewer(index)}

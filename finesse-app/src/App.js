@@ -1,6 +1,9 @@
 import { ConfigProvider } from "antd";
 import "./App.css";
 import AppLayout from "./containers/AppLayout";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
@@ -12,9 +15,11 @@ function App() {
         },
       }}
     >
-      <div className="App">
-        <AppLayout />
-      </div>
+      <QueryClientProvider client={queryClient}>
+        <div className="App">
+          <AppLayout />
+        </div>
+      </QueryClientProvider>
     </ConfigProvider>
   );
 }
