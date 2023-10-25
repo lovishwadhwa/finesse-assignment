@@ -1,9 +1,9 @@
 ## Steps to start
 
 - root folder has the backend so install the dependencies via npm i first
-- run the backend with npm run start ( this will run the backend on 8443 port)
+- run the backend with npm start ( this will run the backend on 8443 port)
 - finesse-app has the frontend so move to the folder and install the dependencies via npm i there
-- run the frontend in the folder with npm run start
+- run the frontend in the folder with npm start
 - You can now go to localhost:3000 and check out the application.
 
 ## Identify 1 issue of the current live website and resolve it in your design.
